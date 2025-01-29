@@ -1,0 +1,134 @@
+state(?s2) ^ pointsTo(?s2, ?sg2) ^ pointsTo(?s1, ?sg1) ^ sameAgentState(?s1, ?s2) ^ gateStateSpace(?sg1) ^ state(?s1) ^ differentFrom(?s1, ?s2) ^ gateStateSpace(?sg2) ^ open(?sg1, false) ^ open(?sg2, true) -> gateOpen_reach(?s1, ?s2)
+
+state(?s2) ^ pointsTo(?s2, ?g) ^ pointsTo(?s1, ?g) ^ state(?s1) ^ differentFrom(?s1, ?s2) ^ pointsTo(?s1, ?sg2) ^ differentFrom(?sg2,?g) ^ gateStateSpace(?sg2) ^ open(?sg2, true) -> noActionReach(?s1, ?s2)
+
+state(?s1) ^ state(?s2) ^ differentFrom(?s1, ?s2) ^ coupledState(?s1, ?cs1) ^ coupledState(?s2, ?cs1) ^ pointsTo(?cs1, ?g) ^ gateStateSpace(?g) ^ open(?g, true) -> goSReach(?s1, ?s2)
+
+
+region(?r1) ^ region(?r2) ^ CoupledState(?r1, ?s) ^ CoupledState(?r2, ?s) ^ differentFrom(?r1, ?r2) ^ Traversability(?r1, ?t1) ^ swrlb:greaterThan(?t1, 0) ^ Traversability(?r2, ?t2) ^ swrlb:greaterThan(?t2, 0) ^ controllable_boundary_state(?s) ^ CorrospondsTo(?s, ?ag) ^ gate(?ag) ^ CorrospondsTo(?s, ?agV) ^ boundary_closed(?agV) ^ CurrentBoundaryOpen(?agv, false) ^ differentFrom(?agV, ?ag) -> BoundaryOpenReach(?r1, ?r2)
+
+region(?r1) ^ region(?r2) ^ CoupledState(?r1, ?s1) ^ CoupledState(?r2, ?s1) ^ differentFrom(?r1, ?r2) ^ Traversability(?r1, ?t1) ^ swrlb:greaterThan(?t1, 0) ^ Traversability(?r2, ?t2) ^ swrlb:greaterThan(?t2, 0) ^ controllable_boundary_state(?s1) ^ CorrospondsTo(?s1, ?ag) ^ boundary_closed(?ag) -> BoundaryOpenReach(?r1, ?r2) ^ BoundaryOpenReach(?r1, ?s1)
+
+region( ?r1) ^ CoupledState(?r1, ?s1) ^ CoupledState(?r1, ?s2) ^ differentFrom(?s1, ?s2) ^ controllable_boundary_state(?s1) ^ controllable_boundary_state(?s2) ^ CorrospondsTo(?s1, ?ag) ^ boundary_closed(?ag) ^ CorrospondsTo(?s2, ?ag2) ^ boundary_open(?ag2) -> BoundaryOpenReach(?s1, ?s2)
+
+
+
+
+
+differentFrom(?s1, ?s2) ^ controllable_boundary_state(?s1) ^ controllable_boundary_state(?s2) ^ CorrospondsTo(?s1, ?ag) ^ boundary_closed(?ag) ^ CorrospondsTo(?s2, ?ag2) ^ boundary_open(?ag2) ^ CorrospondsTo(?s2, ?agN) ^ CorrospondsTo(?s1, ?agN) ^ differentFrom(?agN, ?ag1) ^ differentFrom(?agN, ?ag2) -> BoundaryOpenReach(?s1, ?s2)
+
+region(?r1) ^ region(?r2)  ^ BoundedBy(?r1, ?b1) ^ BoundedBy(?r2, ?b2) ^ sameAs(?b1, ?b2) ^ differentFrom(?r1, ?r2) ^ Traversability(?r1, ?t1) ^ swrlb:greaterThan(?t1, 0) ^ Traversability(?r2, ?t2) ^ swrlb:greaterThan(?t2, 0) ^ coupledState(?r1, ?s1) ^ coupledState(?r2, ?s1) ^ CorrospondsTo(?s1, ?val) ^ boundary_open(?val) ^ isEOf(?r1, ?b1) ^ isWOf(?r2, ?b2) -> GoEReach(?s1, ?r1) ^ GoWReach(?s1, ?r2) 
+
+
+region(?r1) ^ region(?r2)  ^ BoundedBy(?r1, ?b1) ^ BoundedBy(?r2, ?b2) ^ sameAs(?b1, ?b2) ^ differentFrom(?r1, ?r2) ^ Traversability(?r1, ?t1) ^ swrlb:greaterThan(?t1, 0) ^ Traversability(?r2, ?t2) ^ swrlb:greaterThan(?t2, 0) ^ coupledState(?r1, ?s1) ^ coupledState(?r2, ?s1) ^ CorrospondsTo(?s1, ?val) ^ boundary_open(?val) ^ isNOf(?r1, ?b1) ^ isSOf(?r2, ?b2) -> GoNReach(?s1, ?r1) ^ GoSReach(?s1, ?r2) 
+
+
+differentFrom(?s1, ?s2) ^ control_device_state(?s1) ^ control_device_state(?s2) ^ CorrospondsTo(?s1, ?ag) ^ lock_closed(?ag) ^ CorrospondsTo(?s2, ?ag2) ^ lock_open(?ag2) ^ CorrospondsTo(?s2, ?agN) ^ CorrospondsTo(?s1, ?agN) ^ differentFrom(?agN, ?ag1) ^ differentFrom(?agN, ?ag2) -> LockOpenReach(?s1, ?s2)
+
+
+Controllable_boundary_state(?r1) ^ CoupledState(?r1, ?s1) ^ CorrospondsTo(?s1, ?val) ^ lock_open(?val) ^ CorrospondsTo(?s1, ?ag) ^ control_device(?ag) ^ differentFrom(?val, ?ag) ^ differentFrom(?r1, ?s1)   -> NeighborReach(?r1, ?s1)
+
+
+-> Coupling
+|| Same agent states action reach
+
+
+        L_c = L_o
+         ^    _^ 
+         |   |
+             V
+A23 ->    B_c   <- A33 
+    ^      ||     ^
+    |_>   B_o   <_|
+
+s0: Same State Agent
+untitled-ontology-39:pointsTo(?s1, ?a1) ^ untitled-ontology-39:pointsTo(?s2, ?a2) ^ sameAs(?a1, ?a2) ^ untitled-ontology-39:state(?s1) ^ untitled-ontology-39:state(?s2) ^ differentFrom(?s1, ?s2) -> untitled-ontology-39:sameAgentState(?s1, ?s2)
+
+s1: Def Trav for asphalt
+region(?f) ^ car(?v) ^ asphaltM(?m) ^ HasMaterial(?f, ?m) -> Traversability(?f, 100)
+
+s2: Def Trav for grass
+region(?f) ^ grassM(?m) ^ car(?v) ^ HasMaterial(?f, ?m) -> Traversability(?f, 90)
+
+s3: East Reach
+region(?r1) ^ region(?r2) ^ differentFrom(?r1, ?r2) ^ isEOf(?r1, ?r2) ^ Traversability(?r1, ?t1) ^ Traversability(?r2, ?t2) ^ swrlb:greaterThan(?t1, 0) ^ swrlb:greaterThan(?t2, 0) -> GoEReach(?r2, ?r1) ^ NeighborReach(?r1, ?r2)
+
+s4: West Reach
+region(?r1) ^ region(?r2) ^ differentFrom(?r1, ?r2) ^ isWOf(?r1, ?r2) ^ Traversability(?r1, ?t1) ^ Traversability(?r2, ?t2) ^ swrlb:greaterThan(?t1, 0) ^ swrlb:greaterThan(?t2, 0) -> GoWReach(?r2, ?r1) ^ NeighborReach(?r1, ?r2)
+
+s5: North Reach
+region(?r1) ^ region(?r2) ^ differentFrom(?r1, ?r2) ^ isNOf(?r1, ?r2) ^ Traversability(?r1, ?t1) ^ Traversability(?r2, ?t2) ^ swrlb:greaterThan(?t1, 0) ^ swrlb:greaterThan(?t2, 0) -> GoNReach(?r2, ?r1) ^ NeighborReach(?r1, ?r2)
+
+s6: South Reach
+region(?r1) ^ region(?r2) ^ differentFrom(?r1, ?r2) ^ isSOf(?r1, ?r2) ^ Traversability(?r1, ?t1) ^ Traversability(?r2, ?t2) ^ swrlb:greaterThan(?t1, 0) ^ swrlb:greaterThan(?t2, 0) -> GoSReach(?r2, ?r1) ^ NeighborReach(?r1, ?r2)
+
+s7: CouplingReach state to state
+agent_state(?r1) ^ CoupledState(?r1, ?cs) -> CouplingReach(?r1, ?cs)
+
+s8: GoS/GoN Reach, open boundary
+region(?r1) ^ region(?r2) ^ BoundedBy(?r1, ?b1) ^ BoundedBy(?r2, ?b2) ^ sameAs(?b1, ?b2) ^ differentFrom(?r1, ?r2) ^ Traversability(?r1, ?t1) ^ swrlb:greaterThan(?t1, 0) ^ Traversability(?r2, ?t2) ^ swrlb:greaterThan(?t2, 0) ^ CoupledState(?r1, ?s1) ^ CoupledState(?r2, ?s1) ^ CorrospondsTo(?s1, ?val) ^ boundary_open(?val) ^ isNOf(?r1, ?b1) ^ isSOf(?r2, ?b2) -> GoNReach(?s1, ?r1) ^ GoSReach(?s1, ?r2) ^ NeighborReach(?r1, ?s1) ^ NeighborReach(?r2, ?s1)
+
+s9: GoE/GoW Reach, open boundary
+region(?r1) ^ region(?r2) ^ BoundedBy(?r1, ?b1) ^ BoundedBy(?r2, ?b2) ^ sameAs(?b1, ?b2) ^ differentFrom(?r1, ?r2) ^ Traversability(?r1, ?t1) ^ swrlb:greaterThan(?t1, 0) ^ Traversability(?r2, ?t2) ^ swrlb:greaterThan(?t2, 0) ^ CoupledState(?r1, ?s1) ^ CoupledState(?r2, ?s1) ^ CorrospondsTo(?s1, ?val) ^ boundary_open(?val) ^ isEOf(?r1, ?b1) ^ isWOf(?r2, ?b2) -> GoEReach(?s1, ?r1) ^ GoWReach(?s1, ?r2) ^ NeighborReach(?r1, ?s1) ^ NeighborReach(?r2, ?s1)
+
+s15: GoFrom closedGate to openGate
+differentFrom(?s1, ?s2) ^ controllable_boundary_state(?s1) ^ controllable_boundary_state(?s2) ^ CorrospondsTo(?s1, ?ag) ^ boundary_closed(?ag) ^ CorrospondsTo(?s2, ?ag2) ^ boundary_open(?ag2) ^ CorrospondsTo(?s2, ?agN) ^ CorrospondsTo(?s1, ?agN) ^ differentFrom(?agN, ?ag1) ^ differentFrom(?agN, ?ag2) -> BoundaryOpenReach(?s1, ?s2)
+
+s16: CouplingReach from region to state
+region(?r1) ^ CoupledState(?r1, ?cs) -> CouplingReach(?r1, ?cs)
+
+s17: GoFrom closedLock to openLock
+differentFrom(?s1, ?s2) ^ control_device_state(?s1) ^ control_device_state(?s2) ^ CorrospondsTo(?s1, ?ag) ^ lock_closed(?ag) ^ CorrospondsTo(?s2, ?ag2) ^ lock_open(?ag2) ^ CorrospondsTo(?s2, ?agN) ^ CorrospondsTo(?s1, ?agN) ^ differentFrom(?agN, ?ag1) ^ differentFrom(?agN, ?ag2) -> LockOpenReach(?s1, ?s2)
+
+
+
+
+
+
+
+
+
+motionAgentState(?s1) ^ motionAgentState(?s2) ^ differentFrom(?s1, ?s2) ^ corrospondsTo(?s1, ?ag) ^ corrospondsTo(?s2, ?ag) ^ agentClass(?ag) ^ corrospondsTo(?s1, ?val1) ^ corrospondsTo(?s2, ?val2) ^ differentFrom(?val1, ?val2) ^ region(?val1) ^ path(?val2) ^ traversabilityValue(?val1, ?t1) ^ traversabilityValue(?val2, ?t2) ^ swrlb:greaterThan(?t1, 0) ^ swrlb:greaterThan(?t2, 0) ^ boundedBy(?val1, ?b) ^ boundedBy(?val2, ?b) ^ controllableBoundary(?b) ^ isEOf(?val1, ?b) ^ isWOf(?val2, ?b) -> goEAction(?s2, ?s1) ^ goWAction(?s1, ?s2)
+
+s10: GoUpAlongReach
+differentFrom(?p1, ?b1) ^ differentFrom(?p1, ?b2) ^ differentFrom(?b1, ?b2) ^ BoundedBy(?p1, ?b1) ^ BoundedBy(?p1, ?b2) ^ swrlb:greaterThan(?t1, 0) ^ Traversability(?p1, ?t1) ^ path(?p1) ^ UpAlong(?b1, ?b2) -> GoDownAlongReach(?b1, ?b2)
+
+
+
+
+
+s11: NeighborReach openLock to coupledState
+controllable_boundary_state(?r1) ^ CoupledState(?r1, ?s1) ^ CorrospondsTo(?s1, ?val) ^ lock_open(?val) ^ CorrospondsTo(?s1, ?ag) ^ control_device(?ag) ^ differentFrom(?val, ?ag) ^ differentFrom(?r1, ?s1) -> NeighborReach(?r1, ?s1)
+
+s12: open boundary Neighbor reach
+region(?r1) ^ region(?r2) ^ BoundedBy(?r1, ?b1) ^ BoundedBy(?r2, ?b2) ^ sameAs(?b1, ?b2) ^ differentFrom(?r1, ?r2) ^ Traversability(?r1, ?t1) ^ swrlb:greaterThan(?t1, 0) ^ Traversability(?r2, ?t2) ^ swrlb:greaterThan(?t2, 0) ^ CurrentBoundaryOpen(?b1, true) -> NeighborReach(?r1, ?r2)
+
+
+agentState(?s1) ^ agentState(?s2) ^ nominalReach(?s1, ?s2) ^ differentFrom(?s1, ?s2) ^ compositeState(?cs) ^ hasState(?cs, ?s2) ^ differentFrom(?cs, ?s2) ^ differentFrom(?cs, ?s1) -> actionReach(?s1, ?cs)
+
+compositeState(?cs1) ^ compositeState(?cs2) ^ differentFrom(?cs1, ?cs2) ^ hasState(?cs2, ?s2c2) ^ hasState(?cs2, ?s1c2) ^ differentFrom(?s1c2, ?s2c2) ^ hasState(?cs1, ?s2c1) ^ hasState(?cs2, ?s1c1) ^ differentFrom(?s1c1, ?s2c2) ^ sameAs(?s1c2, ?s1c1) ^ controllableBoundaryState(?s1c1) ^ motionAgentState(?s2c2) ^ motionAgentState(?s2c1) ^ nominalReach(?s2c1, ?s2c2) -> actionReach(?cs1, ?cs2)
+
+
+agentState(?s1) ^ agentState(?s2) ^ nominalReach(?s1, ?s2) ^ differentFrom(?s1, ?s2) ^ downstreamCoupling(?s1, false) ^ downstreamCoupling(?s2, false) -> actionReach(?s1, ?s2)
+
+lockState(?a1) ^ corrospondsTo(?a1,?val1) ^ openLock(?val1) -> goodState(?a1)
+
+motionAgentState(?s1) ^ :motionAgentState(?s2) ^ differentFrom(?s1, ?s2) ^ :goSAction(?s1, ?s2) ^ :compositeState(?cs1) ^ :compositeState(?cs2) ^ differentFrom(?cs1, ?cs2) ^ :hasState(?cs1, ?s1) ^ :hasState(?cs2, ?s2) ^ :goodState(?cs1, true) ^ :goodState(?cs2, true) ^ :downstreamCoupling(?s1, true) ^ :downstreamCoupling(?s2, true) ^ :baseAgent(?cs1, ?ba) ^ :baseAgent(?cs2, ?ba) ^ differentFrom(?ba, ?cs1) ^ differentFrom(?ba, ?cs2) -> :cs_goSActionPlease(?cs1, ?cs2)
+
+
+
+valveState(?s1) ^ valveState(?s2) ^ differentFrom(?s1, ?s2) ^ sameStateAgent(?s1, ?s2)  ^ corrospondsTo(?s1, ?val1) ^ corrospondsTo(?s2, ?val2) ^ differentFrom(?val1, ?val2) ^ valveClosed(?val1) ^ valveOpen(?val2) -> openVentAction(?s1, ?s2) ^ closeVentAction(?s2, ?s1)
+
+reactorCoreState(?s1) ^ reactorCoreState(?s2) ^ differentFrom(?s1, ?s2) ^ sameStateAgent(?s1, ?s2) ^ corrospondsTo(?s1, ?val1) ^ corrospondsTo(?s2, ?val2) ^ differentFrom(?val1, ?val2) ^ reactorLowPressure(?val1) ^ reactorHighPressure(?val2) -> timePassageAction(?s1, ?s2)
+
+
+generatorState(?s1) ^ generatorState(?s2) ^ differentFrom(?s1, ?s2) ^ sameStateAgent(?s1, ?s2) ^ corrospondsTo(?s1, ?val1) ^ corrospondsTo(?s2, ?val2) ^ differentFrom(?val1, ?val2) ^ powerOn(?val1) ^ powerOff(?val2) -> turnOffGeneraorAction(?s1, ?s2) ^ turnOnGeneratorAction(?s2, ?s1)
+
+fuelAmountState(?s1) ^ fuelAmountState(?s2) ^ differentFrom(?s1, ?s2) ^ sameStateAgent(?s1, ?s2) ^ corrospondsTo(?s1, ?val1) ^ corrospondsTo(?s2, ?val2) ^ differentFrom(?val1, ?val2) ^ empty(?val1) ^ notEmpty(?val2) -> timePassageAction(?s1, ?s2) ^ timePassageAction(?s2, ?s1)
+
+agentStateValue(?v1)^ corrospondedBy(?a) ^ agentState(?a) ^ goodState(?v1, val) -> goodState(?a, val)
+
+
+fuelTruckConnectionState(?s1) ^ fuelTruckConnectionState(?s2) ^ differentFrom(?s1, ?s2) ^ sameStateAgent(?s1, ?s2) ^ corrospondsTo(?s1, ?val1) ^ corrospondsTo(?s2, ?val2) ^ differentFrom(?val1, ?val2) ^ fuelTruckConnected(?val1) ^ fuelTruckNotConnected(?val2) -> disconnectFuelTruckAction(?s1, ?s2) ^ connectFuelTruckAction(?s2, ?s1)
+
+disconnectFuelTruckAction
