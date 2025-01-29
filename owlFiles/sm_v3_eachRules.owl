@@ -1,0 +1,2082 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12">
+    <Prefix name="" IRI="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="untitled-ontology-12" IRI="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#"/>
+    <Declaration>
+        <Class IRI="#OffRoadTrail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#amorphousFeatures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#avoidSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#concreteTerrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#crossing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deadEnd"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#destSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#geom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grassTerrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grassyField"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gravelTerrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#groundPatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grounds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#locatedFeatures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mudTerrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#occupiability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#oddBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#opticalVisibility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pathConnector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pathSegments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#paths"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pathway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pavedRoadway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#planReachSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#planSets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#properties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#regularBuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#restSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rockPile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sandTerrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#signPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sourceSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stillWaterBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#terrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#traversability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#waterTerrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#waterWay"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#archChild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#archParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#borderedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#borderedLeftBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#borderedRightBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#borders"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bordersLeft"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bordersRight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canBeReachedFromFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canBeReachedFromGroundPatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canReachFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canReachGroundPatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistsOfLines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contourReach"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contourReachable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dirReach"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dirReachable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dnNeighbor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dnStreamOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eastOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTerrain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAdjacentTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAssociatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBorderedNghrOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDownstreamOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNeighborOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOpaqueFromAbove"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOpaqueFromSides"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOpenNgbhrOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfLine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUpstreamOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#navReach"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#navReachable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#near"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#northOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pathConnect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#planAvoid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#planDestination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#planRest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#planSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#southOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#upNeighbor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#upStreamOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#westOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#flowP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numNeighbors"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#traversibleByPed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_Barn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_Bridge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_PO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_River"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_River_Bend"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_River_seg1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_River_seg2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_River_seg3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_Road"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_Road_seg1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_Road_seg2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_WaterTower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_pc1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_pc2"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#grassTerrain"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#terrain"/>
+            <DataHasValue>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#grassyField"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#amorphousFeatures"/>
+            <Class IRI="#grassTerrain"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#OffRoadTrail"/>
+        <Class IRI="#pathway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#amorphousFeatures"/>
+        <Class IRI="#grounds"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#amorphousFeatures"/>
+        <Class IRI="#properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#amorphousFeatures"/>
+        <Class IRI="#shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#avoidSet"/>
+        <Class IRI="#planSets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#concreteTerrain"/>
+        <Class IRI="#terrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#concreteTerrain"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#traversibleByPed"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#crossing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#archChild"/>
+            <Class IRI="#pathConnector"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#destSet"/>
+        <Class IRI="#planSets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fence"/>
+        <Class IRI="#paths"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gravelTerrain"/>
+        <Class IRI="#terrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#groundPatch"/>
+        <Class IRI="#grounds"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#groundPatch"/>
+        <Class IRI="#location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#groundPatch"/>
+        <Class IRI="#properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#groundPatch"/>
+        <ObjectMaxCardinality cardinality="3">
+            <ObjectProperty IRI="#isNeighborOf"/>
+            <Class IRI="#groundPatch"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#groundPatch"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#numNeighbors"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#locatedFeatures"/>
+        <Class IRI="#grounds"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#locatedFeatures"/>
+        <Class IRI="#location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#location"/>
+        <Class IRI="#geom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mudTerrain"/>
+        <Class IRI="#terrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#occupiability"/>
+        <Class IRI="#properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#oddBuilding"/>
+        <Class IRI="#amorphousFeatures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#opticalVisibility"/>
+        <Class IRI="#properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pathConnector"/>
+        <Class IRI="#traversability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pathConnector"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#archChild"/>
+            <Class IRI="#pathSegments"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pathConnector"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#traversibleByPed"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pathSegments"/>
+        <Class IRI="#paths"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pathSegments"/>
+        <Class IRI="#traversability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pathSegments"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#bordersLeft"/>
+            <Class IRI="#grounds"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pathSegments"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#bordersRight"/>
+            <Class IRI="#grounds"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pathSegments"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#dnNeighbor"/>
+            <Class IRI="#paths"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pathSegments"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#upNeighbor"/>
+            <Class IRI="#paths"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pathway"/>
+        <Class IRI="#amorphousFeatures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pathway"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAssociatedWith"/>
+            <Class IRI="#paths"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pavedRoadway"/>
+        <Class IRI="#pathway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#planAvoid"/>
+            <Class IRI="#groundPatch"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plan"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#planDestination"/>
+            <Class IRI="#groundPatch"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plan"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#planSource"/>
+            <Class IRI="#groundPatch"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#planSets"/>
+        <Class IRI="#groundPatch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#region"/>
+        <Class IRI="#amorphousFeatures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#regularBuilding"/>
+        <Class IRI="#locatedFeatures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#restSet"/>
+        <Class IRI="#planSets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rockPile"/>
+        <Class IRI="#locatedFeatures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rockPile"/>
+        <DataHasValue>
+            <DataProperty IRI="#traversibleByPed"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sandTerrain"/>
+        <Class IRI="#terrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#shape"/>
+        <Class IRI="#geom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#signPost"/>
+        <Class IRI="#locatedFeatures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sourceSet"/>
+        <Class IRI="#planSets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stillWaterBody"/>
+        <Class IRI="#region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stillWaterBody"/>
+        <Class IRI="#waterTerrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#terrain"/>
+        <Class IRI="#properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#terrain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasProperty"/>
+            <Class IRI="#properties"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#traversability"/>
+        <Class IRI="#properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree"/>
+        <Class IRI="#locatedFeatures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#waterTerrain"/>
+        <Class IRI="#terrain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#waterWay"/>
+        <Class IRI="#pathway"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#waterWay"/>
+        <Class IRI="#waterTerrain"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#avoidSet"/>
+        <Class IRI="#destSet"/>
+        <Class IRI="#restSet"/>
+        <Class IRI="#sourceSet"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#concreteTerrain"/>
+        <Class IRI="#grassTerrain"/>
+        <Class IRI="#gravelTerrain"/>
+        <Class IRI="#mudTerrain"/>
+        <Class IRI="#sandTerrain"/>
+        <Class IRI="#waterTerrain"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#grounds"/>
+        <Class IRI="#pathConnector"/>
+        <Class IRI="#plan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#grounds"/>
+        <Class IRI="#pathSegments"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#pathConnector"/>
+        <Class IRI="#pathSegments"/>
+    </DisjointClasses>
+    <DisjointUnion>
+        <Class IRI="#amorphousFeatures"/>
+        <Class IRI="#groundPatch"/>
+        <Class IRI="#locatedFeatures"/>
+    </DisjointUnion>
+    <ClassAssertion>
+        <Class IRI="#regularBuilding"/>
+        <NamedIndividual IRI="#ex1_Barn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#crossing"/>
+        <NamedIndividual IRI="#ex1_Bridge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regularBuilding"/>
+        <NamedIndividual IRI="#ex1_PO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#paths"/>
+        <NamedIndividual IRI="#ex1_River"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pathSegments"/>
+        <NamedIndividual IRI="#ex1_River_Bend"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pathSegments"/>
+        <NamedIndividual IRI="#ex1_River_seg1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pathSegments"/>
+        <NamedIndividual IRI="#ex1_River_seg2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pathSegments"/>
+        <NamedIndividual IRI="#ex1_River_seg3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#paths"/>
+        <NamedIndividual IRI="#ex1_Road"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pathSegments"/>
+        <NamedIndividual IRI="#ex1_Road_seg1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pathSegments"/>
+        <NamedIndividual IRI="#ex1_Road_seg2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regularBuilding"/>
+        <NamedIndividual IRI="#ex1_WaterTower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pathConnector"/>
+        <NamedIndividual IRI="#ex1_pc1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pathConnector"/>
+        <NamedIndividual IRI="#ex1_pc2"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#ex1_Barn"/>
+        <NamedIndividual IRI="#ex1_Bridge"/>
+        <NamedIndividual IRI="#ex1_PO"/>
+        <NamedIndividual IRI="#ex1_River"/>
+        <NamedIndividual IRI="#ex1_River_Bend"/>
+        <NamedIndividual IRI="#ex1_River_seg1"/>
+        <NamedIndividual IRI="#ex1_River_seg2"/>
+        <NamedIndividual IRI="#ex1_River_seg3"/>
+        <NamedIndividual IRI="#ex1_Road"/>
+        <NamedIndividual IRI="#ex1_Road_seg1"/>
+        <NamedIndividual IRI="#ex1_Road_seg2"/>
+        <NamedIndividual IRI="#ex1_WaterTower"/>
+        <NamedIndividual IRI="#ex1_pc1"/>
+        <NamedIndividual IRI="#ex1_pc2"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#near"/>
+        <NamedIndividual IRI="#ex1_Barn"/>
+        <NamedIndividual IRI="#ex1_Road_seg2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#archChild"/>
+        <NamedIndividual IRI="#ex1_Bridge"/>
+        <NamedIndividual IRI="#ex1_pc1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#archChild"/>
+        <NamedIndividual IRI="#ex1_Bridge"/>
+        <NamedIndividual IRI="#ex1_pc2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eastOf"/>
+        <NamedIndividual IRI="#ex1_PO"/>
+        <NamedIndividual IRI="#ex1_River"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#northOf"/>
+        <NamedIndividual IRI="#ex1_PO"/>
+        <NamedIndividual IRI="#ex1_WaterTower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consistsOfLines"/>
+        <NamedIndividual IRI="#ex1_River"/>
+        <NamedIndividual IRI="#ex1_River_Bend"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consistsOfLines"/>
+        <NamedIndividual IRI="#ex1_River"/>
+        <NamedIndividual IRI="#ex1_River_seg1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consistsOfLines"/>
+        <NamedIndividual IRI="#ex1_River"/>
+        <NamedIndividual IRI="#ex1_River_seg2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consistsOfLines"/>
+        <NamedIndividual IRI="#ex1_River"/>
+        <NamedIndividual IRI="#ex1_River_seg3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#upNeighbor"/>
+        <NamedIndividual IRI="#ex1_River_Bend"/>
+        <NamedIndividual IRI="#ex1_River_seg3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#upNeighbor"/>
+        <NamedIndividual IRI="#ex1_River_seg1"/>
+        <NamedIndividual IRI="#ex1_River_seg2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#upNeighbor"/>
+        <NamedIndividual IRI="#ex1_River_seg2"/>
+        <NamedIndividual IRI="#ex1_River_Bend"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consistsOfLines"/>
+        <NamedIndividual IRI="#ex1_Road"/>
+        <NamedIndividual IRI="#ex1_Road_seg1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consistsOfLines"/>
+        <NamedIndividual IRI="#ex1_Road"/>
+        <NamedIndividual IRI="#ex1_Road_seg2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#archChild"/>
+        <NamedIndividual IRI="#ex1_pc1"/>
+        <NamedIndividual IRI="#ex1_River_seg1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#archChild"/>
+        <NamedIndividual IRI="#ex1_pc1"/>
+        <NamedIndividual IRI="#ex1_River_seg2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#archChild"/>
+        <NamedIndividual IRI="#ex1_pc2"/>
+        <NamedIndividual IRI="#ex1_Road_seg1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#archChild"/>
+        <NamedIndividual IRI="#ex1_pc2"/>
+        <NamedIndividual IRI="#ex1_Road_seg2"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#borderedLeftBy"/>
+        <ObjectProperty IRI="#borderedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#borderedRightBy"/>
+        <ObjectProperty IRI="#borderedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#bordersLeft"/>
+        <ObjectProperty IRI="#borders"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#bordersRight"/>
+        <ObjectProperty IRI="#borders"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#consistsOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#contourReach"/>
+        <ObjectProperty IRI="#navReach"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#contourReachable"/>
+        <ObjectProperty IRI="#navReachable"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#dirReach"/>
+        <ObjectProperty IRI="#navReach"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#dirReachable"/>
+        <ObjectProperty IRI="#navReachable"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#dnStreamOf"/>
+        <ObjectProperty IRI="#contourReach"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#eastOf"/>
+        <ObjectProperty IRI="#dirReach"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBorderedNghrOf"/>
+        <ObjectProperty IRI="#isNeighborOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDownstreamOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOpaqueFromSides"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOpenNgbhrOf"/>
+        <ObjectProperty IRI="#isNeighborOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#northOf"/>
+        <ObjectProperty IRI="#dirReach"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#southOf"/>
+        <ObjectProperty IRI="#dirReach"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#upStreamOf"/>
+        <ObjectProperty IRI="#contourReach"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#westOf"/>
+        <ObjectProperty IRI="#dirReach"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#archChild"/>
+        <ObjectProperty IRI="#archParent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#borderedBy"/>
+        <ObjectProperty IRI="#borders"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#borderedLeftBy"/>
+        <ObjectProperty IRI="#bordersLeft"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#borderedRightBy"/>
+        <ObjectProperty IRI="#bordersRight"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#canBeReachedFromFeature"/>
+        <ObjectProperty IRI="#canReachFeature"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#canBeReachedFromGroundPatch"/>
+        <ObjectProperty IRI="#canReachGroundPatch"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#consistsOf"/>
+        <ObjectProperty IRI="#isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#consistsOfLines"/>
+        <ObjectProperty IRI="#isPartOfLine"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#contourReach"/>
+        <ObjectProperty IRI="#contourReachable"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#dirReach"/>
+        <ObjectProperty IRI="#dirReachable"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#dnNeighbor"/>
+        <ObjectProperty IRI="#upNeighbor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#dnStreamOf"/>
+        <ObjectProperty IRI="#upStreamOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#eastOf"/>
+        <ObjectProperty IRI="#westOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isDownstreamOf"/>
+        <ObjectProperty IRI="#isUpstreamOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#navReach"/>
+        <ObjectProperty IRI="#navReachable"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#northOf"/>
+        <ObjectProperty IRI="#southOf"/>
+    </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#consistsOf"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isAssociatedWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isNeighborOf"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#canReachFeature"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#canReachGroundPatch"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#contourReach"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#dirReach"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#dnStreamOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#eastOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isUpstreamOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#navReach"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#northOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#southOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#upStreamOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#westOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#archChild"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#borders"/>
+        <Class IRI="#paths"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canReachFeature"/>
+        <ObjectUnionOf>
+            <Class IRI="#amorphousFeatures"/>
+            <Class IRI="#locatedFeatures"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canReachGroundPatch"/>
+        <Class IRI="#groundPatch"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consistsOf"/>
+        <Class IRI="#amorphousFeatures"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consistsOfLines"/>
+        <Class IRI="#paths"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contourReach"/>
+        <ObjectUnionOf>
+            <Class IRI="#pathSegments"/>
+            <Class IRI="#paths"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dirReach"/>
+        <Class IRI="#grounds"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProperty"/>
+        <Class IRI="#properties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTerrain"/>
+        <ObjectUnionOf>
+            <Class IRI="#amorphousFeatures"/>
+            <Class IRI="#groundPatch"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAdjacentTo"/>
+        <Class IRI="#groundPatch"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAssociatedWith"/>
+        <ObjectUnionOf>
+            <Class IRI="#grounds"/>
+            <Class IRI="#paths"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isNeighborOf"/>
+        <Class IRI="#groundPatch"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOpaqueFromAbove"/>
+        <Class IRI="#opticalVisibility"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOpaqueFromSides"/>
+        <Class IRI="#opticalVisibility"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUpstreamOf"/>
+        <Class IRI="#paths"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#navReach"/>
+        <ObjectUnionOf>
+            <Class IRI="#grounds"/>
+            <Class IRI="#pathSegments"/>
+            <Class IRI="#paths"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#near"/>
+        <ObjectUnionOf>
+            <Class IRI="#grounds"/>
+            <Class IRI="#pathConnector"/>
+            <Class IRI="#pathSegments"/>
+            <Class IRI="#paths"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pathConnect"/>
+        <Class IRI="#pathSegments"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#planAvoid"/>
+        <Class IRI="#plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#planDestination"/>
+        <Class IRI="#plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#planRest"/>
+        <Class IRI="#plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#planSource"/>
+        <Class IRI="#plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#upNeighbor"/>
+        <Class IRI="#paths"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#archChild"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#borders"/>
+        <Class IRI="#grounds"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canReachFeature"/>
+        <ObjectUnionOf>
+            <Class IRI="#amorphousFeatures"/>
+            <Class IRI="#locatedFeatures"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canReachGroundPatch"/>
+        <Class IRI="#groundPatch"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consistsOf"/>
+        <ObjectUnionOf>
+            <Class IRI="#groundPatch"/>
+            <Class IRI="#locatedFeatures"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consistsOfLines"/>
+        <Class IRI="#pathSegments"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contourReach"/>
+        <ObjectUnionOf>
+            <Class IRI="#pathSegments"/>
+            <Class IRI="#paths"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dirReach"/>
+        <Class IRI="#grounds"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProperty"/>
+        <Class IRI="#properties"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTerrain"/>
+        <Class IRI="#terrain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAdjacentTo"/>
+        <Class IRI="#groundPatch"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAssociatedWith"/>
+        <ObjectUnionOf>
+            <Class IRI="#grounds"/>
+            <Class IRI="#paths"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isNeighborOf"/>
+        <Class IRI="#groundPatch"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUpstreamOf"/>
+        <Class IRI="#paths"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#navReach"/>
+        <ObjectUnionOf>
+            <Class IRI="#grounds"/>
+            <Class IRI="#pathSegments"/>
+            <Class IRI="#paths"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#near"/>
+        <ObjectUnionOf>
+            <Class IRI="#grounds"/>
+            <Class IRI="#pathConnector"/>
+            <Class IRI="#pathSegments"/>
+            <Class IRI="#paths"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pathConnect"/>
+        <Class IRI="#pathSegments"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#planAvoid"/>
+        <Class IRI="#groundPatch"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#planDestination"/>
+        <Class IRI="#groundPatch"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#planRest"/>
+        <Class IRI="#groundPatch"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#planSource"/>
+        <Class IRI="#groundPatch"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#upNeighbor"/>
+        <Class IRI="#paths"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#bordersLeft"/>
+        <ObjectProperty IRI="#bordersRight"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#isBorderedNghrOf"/>
+        <ObjectProperty IRI="#isOpenNgbhrOf"/>
+    </DisjointObjectProperties>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numNeighbors"/>
+        <Class IRI="#groundPatch"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#traversibleByPed"/>
+        <Class IRI="#traversability"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProperty"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numNeighbors"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#traversibleByPed"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S4</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasTerrain"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#t"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#amorphousFeatures"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#vPD"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#vPD"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>DeadEnd_3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#groundPatch"/>
+                <Variable IRI="#gp"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#numNeighbors"/>
+                <Variable IRI="#gp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp"/>
+                <Variable IRI="#gp1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp"/>
+                <Variable IRI="#gp2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp"/>
+                <Variable IRI="#gp3"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp2"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp3"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#gp2"/>
+                <Variable IRI="#gp3"/>
+            </DifferentIndividualsAtom>
+            <ClassAtom>
+                <Class IRI="#deadEnd"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#avoidSet"/>
+                <Variable IRI="#gp2"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#deadEnd"/>
+                <Variable IRI="#gp"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>DeadEnd_2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#groundPatch"/>
+                <Variable IRI="#gp"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#numNeighbors"/>
+                <Variable IRI="#gp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp"/>
+                <Variable IRI="#gp1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp"/>
+                <Variable IRI="#gp2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp"/>
+                <Variable IRI="#gp3"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp2"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp3"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#gp2"/>
+                <Variable IRI="#gp3"/>
+            </DifferentIndividualsAtom>
+            <ClassAtom>
+                <Class IRI="#deadEnd"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#deadEnd"/>
+                <Variable IRI="#gp2"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#deadEnd"/>
+                <Variable IRI="#gp"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>DeadEnd_4</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#groundPatch"/>
+                <Variable IRI="#gp"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#numNeighbors"/>
+                <Variable IRI="#gp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp"/>
+                <Variable IRI="#gp1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp"/>
+                <Variable IRI="#gp2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp"/>
+                <Variable IRI="#gp3"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp2"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp3"/>
+            </DifferentIndividualsAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#gp2"/>
+                <Variable IRI="#gp3"/>
+            </DifferentIndividualsAtom>
+            <ClassAtom>
+                <Class IRI="#deadEnd"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp2"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#deadEnd"/>
+                <Variable IRI="#gp"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Reach_4</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#groundPatch"/>
+                <Variable IRI="#gp"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canReachGroundPatch"/>
+                <Variable IRI="#gp"/>
+                <Variable IRI="#gp1"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#gp"/>
+                <Variable IRI="#gp1"/>
+            </DifferentIndividualsAtom>
+            <ClassAtom>
+                <Class IRI="#sourceSet"/>
+                <Variable IRI="#gp"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#planReachSet"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S5</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#plan"/>
+                <Variable IRI="#p1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#groundPatch"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#planAvoid"/>
+                <Variable IRI="#p1"/>
+                <Variable IRI="#gp1"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#avoidSet"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S7</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#plan"/>
+                <Variable IRI="#p1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#groundPatch"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#planDestination"/>
+                <Variable IRI="#p1"/>
+                <Variable IRI="#gp1"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#destSet"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S8</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#plan"/>
+                <Variable IRI="#p1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#groundPatch"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#planRest"/>
+                <Variable IRI="#p1"/>
+                <Variable IRI="#gp1"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#restSet"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S6</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#plan"/>
+                <Variable IRI="#p1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#groundPatch"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#planSource"/>
+                <Variable IRI="#p1"/>
+                <Variable IRI="#gp1"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#sourceSet"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>DeadEnd_1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#groundPatch"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#numNeighbors"/>
+                <Variable IRI="#gp1"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp2"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp2"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gps"/>
+            </DifferentIndividualsAtom>
+            <ClassAtom>
+                <Class IRI="#sourceSet"/>
+                <Variable IRI="#gps"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#deadEnd"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#groundPatch"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#numNeighbors"/>
+                <Variable IRI="#gp1"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp2"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp2"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gps"/>
+            </DifferentIndividualsAtom>
+            <ClassAtom>
+                <Class IRI="#sourceSet"/>
+                <Variable IRI="#gps"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#deadEnd"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Reach_1</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp2"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="#vPD2"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#vPD1"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp2"/>
+                <Variable IRI="#vPD2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="#vPD1"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#restSet"/>
+                <Variable IRI="#gp2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#restSet"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canReachGroundPatch"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Reach_3</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp2"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="#vPD2"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#vPD1"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp2"/>
+                <Variable IRI="#vPD2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="#vPD1"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#restSet"/>
+                <Variable IRI="#gp2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#sourceSet"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canReachGroundPatch"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Reach_2</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNeighborOf"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp2"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="#vPD2"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#vPD1"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp2"/>
+                <Variable IRI="#vPD2"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="#vPD1"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <ClassAtom>
+                <Class IRI="#sourceSet"/>
+                <Variable IRI="#gp2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#sourceSet"/>
+                <Variable IRI="#gp1"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canReachGroundPatch"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPartOf"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#f1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPartOf"/>
+                <Variable IRI="#gp2"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canReachGroundPatch"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#gp2"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#f2"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canReachFeature"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#f2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isPartOf"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#f1"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#f1"/>
+                <Variable IRI="#vPD"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#traversibleByPed"/>
+                <Variable IRI="#gp1"/>
+                <Variable IRI="#vPD"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>upStream</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#upNeighbor"/>
+                <Variable IRI="#a1"/>
+                <Variable IRI="#a2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#upStreamOf"/>
+                <Variable IRI="#a2"/>
+                <Variable IRI="#a1"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

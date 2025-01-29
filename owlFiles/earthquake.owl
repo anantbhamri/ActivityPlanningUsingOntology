@@ -1,0 +1,1129 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#"
+     xml:base="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:v205="http://www.semanticweb.org/ATLAS/ontologies/2023/3/v205#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:earthquake="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#ActionReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#ActionReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Reachability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#BoundaryOpenReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#BoundaryOpenReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#ActionReach"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#BoundedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#BoundedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Bounds"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Bounds -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Bounds"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#CanPerformAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#CanPerformAction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#CoupledState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#CoupledState"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Direction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Direction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#RelativePosition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#DirectionReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#DirectionReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#ActionReach"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#DownAlong -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#DownAlong">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#PairedWithBoundary"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#UpAlong"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoAlongReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoAlongReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#ActionReach"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoDownAlongReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoDownAlongReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoAlongReach"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoUpAlongReach"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoEReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoEReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#DirectionReach"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoWReach"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoNReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoNReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#DirectionReach"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoSReach"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoSReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoSReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#DirectionReach"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoUpAlongReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoUpAlongReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoAlongReach"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoWReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#GoWReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#DirectionReach"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#HasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#HasComponent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#HasMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#HasMaterial">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Makes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#material"/>
+        <rdfs:comment>Specifies the material that makes up an individual belonging to either the agent or the geographic feature class.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#HasSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#HasSensor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>Specifies what all sensors does any given agent have.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#HasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#HasState"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsEOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsEOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Direction"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsWOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsNOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsNOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Direction"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsSOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsNear -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsNear">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#RelativePosition"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsNeighborOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsNeighborOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#RelativePosition"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsSOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsSOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Direction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsWOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsWOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Direction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Makes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Makes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#material"/>
+        <rdfs:comment>Specifies the list of all individuals are are made up of a particular material.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#NeighborReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#NeighborReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Reachability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#PairedWithBoundary -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#PairedWithBoundary">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#PlanReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#PlanReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#PointedToBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#PointedToBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#PointsTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#PointsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#PointsTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Reachability -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Reachability">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#RelativePosition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#RelativePosition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#UpAlong -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#UpAlong">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#PairedWithBoundary"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#AgentManufacturer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#AgentManufacturer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Company that has manufactured the instance of the agent class.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#AgentWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#AgentWeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>The stock weight of the instance of the agent class.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#AutonomyMode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#AutonomyMode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The autonomy level of the instance of the agent class.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#BoundaryControlled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#BoundaryControlled">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#ConfidenceLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#ConfidenceLevel">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>The confidence value about the semantic class of a given individual. It is represented in percentage.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#CurrentBoundaryOpen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#CurrentBoundaryOpen">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#DatasetName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#DatasetName">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of the dataset which is being imported into the unfied ontology.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#ElevationChange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#ElevationChange">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>The rate of change of elevation of an instance of a particular geographic feature. It is the slope i.e. how much elevation is gained/lost for each m moved .</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#HasPressure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#HasPressure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#HasTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#HasTemperature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#ImageName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#ImageName">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of the image of the particular dataset that is being imported into the unfying ontology.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#InstanceHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#InstanceHeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#instance_attributes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>The height of the indivual with respect to the gound.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#InstanceID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#InstanceID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment>The identification value for each individual after segmentation.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsAdversary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsAdversary">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>A boolean used to define if an individual defined is an adversary or not.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsBoulder -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsBoulder">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Boolean used to define if an instance of the rock class is large enough to be also classified as a boulder.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsCobble -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsCobble">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Boolean used to define if an instance of the rock class is small enough to be also classified as cobble.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsDestroyed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsDestroyed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsNotDestroyed"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsDynamic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsDynamic">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Boolean used to define if any given individual of the ontology is capable of motion.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsEgoVehicle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsEgoVehicle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Boolen used to define if an instance of the agent class is ego vehicle which was used to capture the dataset.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsFreshWater -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsFreshWater">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Boolean used to define if an instance of the H20 class, is made up of fresh water or salt water.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsGravel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsGravel">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Boolean used to define if an instance of the rock class is small enough to be also classified as gravel.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsNotDestroyed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsNotDestroyed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsRider -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsRider">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Boolean used to specify if an instance of the person class is also a rider of a vehicle.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsShadow -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsShadow">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Boolean to specify if an individual specified is in shadow.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsVegetationClump -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsVegetationClump">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Boolean used to specify if an instance of the vegetation class is a group of multiple individuals too difficult of being identified individually.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#LabelPolicyVersion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#LabelPolicyVersion">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Version of ATLAS that is being used for unification.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#License -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#License">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Used to mention the type of license used to keep the unifying ontology open source.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Occurence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Occurence">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#SensorIssue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#SensorIssue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Example of what sort of sensor issue is present, eg. lense flare.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#SizeArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#SizeArea">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>The area of an instance of the instance_labels class specified in m^2.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Timestamp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment>The timestamp specifying when the image being converted into the unifying ontology was captured.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Traversability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Traversability">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The ease with which an instance of a geographic_feature class can be travered by a given agent. Specified between a range of 0-100 (100 - Most Traversable and 0 - Least Traversable)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#artificial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#artificial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#asphalt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#asphalt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#artificial"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsDestroyed"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#destroyed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#destroyed">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#not_destroyed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#earthquake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#earthquake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#events"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#events -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#events">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Occurence"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#instance_attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#instance_attributes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#instance_attributes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#material">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#instance_attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#not_destroyed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#not_destroyed"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#tsunami -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#tsunami">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#events"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#LabelPolicyVersion"/>
+                <owl:hasValue>2.0.5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#a1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#a1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#asphalt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#destroyed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#destroyed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#asphalt"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#not_destroyed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#event1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#event1">
+        <earthquake:Occurence rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</earthquake:Occurence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#not_destroyed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#not_destroyed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#asphalt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#tsunami -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#tsunami">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#tsunami"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#asphalt"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#earthquake"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#e"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Occurence"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#e"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsDestroyed"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#m"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#destroyed"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#asphalt"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsDestroyed"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#m"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Traversability"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#m"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#asphalt"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsDestroyed"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#m"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Traversability"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#m"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#asphalt"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#destroyed"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Traversability"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#m"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#asphalt"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#earthquake"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#e"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Occurence"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#e"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#IsDestroyed"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#m"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#asphalt"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#not_destroyed"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ATLAS/ontologies/2023/3/earthquake#Traversability"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#m"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

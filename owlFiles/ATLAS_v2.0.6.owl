@@ -1,0 +1,2653 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ATLAS/ontologies/2023/3/v205"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ATLAS/ontologies/2023/3/v205">
+    <Prefix name="" IRI="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Declaration>
+        <Class IRI="#H2O"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RGB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RV_and_travel_trailer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#accelerometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#active"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#aerial_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#agricultural"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#area_jurisdiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#artificial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#asphalt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#atmospheric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#autumn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#barrel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#barrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#barrier_tape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bicyle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bikeway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#biome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#boom_barrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bush"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cacti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#camera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#canyon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#celestial_body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#clear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cloud"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#coastal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#collection_platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#concrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#construction_and_agricultural_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#curb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dawn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#day"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#debris"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#desert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#detritus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dusk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dynamic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#electric_pole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#elevation_change"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#environment_labels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#exteroperceptive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fire_hydrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fluctuating_elevation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fog_haze"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#forest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gas_pump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#geographic_feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#glacier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grassland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ground_cover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ground_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#guard_rail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gyroscope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#high_grass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hyperspectral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#imu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#instance_attributes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#instance_labels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#kick_scooter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#land_body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#landform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#leaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#legged"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lidar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#low_grass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#magnetometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#military_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#misc_sign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#moss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#motion_label"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#motorcycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#multispectral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#night"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#null"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#obstacle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ocean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#optical_phenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#overpass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#panchromatic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#parking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#passive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#path"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pedestrian_crossing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plateau"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#private"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#proprioperceptive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#public"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#puddle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#radar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rail_track"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#railed_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#regulatory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#river"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#road"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#road_block"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#road_marking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rotating_lidar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rtk_gps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scenario_labels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#season"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#semi_truck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sensor_issue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shipping_container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sidewalk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sky"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#snow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#snow_ice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#soil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#solid_state_lidar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#speed_bump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#spring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#static"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#street_light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stroller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#subterranean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#summer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#telecommunication_pole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#thermal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#time_of_day"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tracked_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#traffic_cone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#traffic_light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#traffic_sign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trailer_unattached"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trash_container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree_crown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree_log"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree_root"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree_trunk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tricycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#truck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tundra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tunnel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ultrasound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unclassified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unknown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#urban"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#valley"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vegetation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#void"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#water"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#water_body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#water_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#weather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wetland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wheelchair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wheeled_device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wheeled_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#winter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wood"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasSensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Makes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AgentManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AgentWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AutonomyMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ConfidenceLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DatasetName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ElevationChange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ImageName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#InstanceHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#InstanceID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsAdversary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsBoulder"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsCobble"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsDynamic"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsEgoVehicle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsFreshWater"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsGravel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsRider"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsShadow"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsVegetationClump"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LabelPolicyVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#License"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SensorIssue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SizeArea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Timestamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Traversability"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#H2O"/>
+        <Class IRI="#material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RGB"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RV_and_travel_trailer"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#accelerometer"/>
+        <Class IRI="#imu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#accelerometer"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#active"/>
+        <Class IRI="#exteroperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#aerial_vehicle"/>
+        <Class IRI="#vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#agent"/>
+        <Class IRI="#collection_platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#agent"/>
+        <Class IRI="#instance_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#agricultural"/>
+        <Class IRI="#ground_cover"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#animal"/>
+        <Class IRI="#agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#area_jurisdiction"/>
+        <Class IRI="#scenario_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#artificial"/>
+        <Class IRI="#material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#asphalt"/>
+        <Class IRI="#artificial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#atmospheric"/>
+        <Class IRI="#instance_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#autumn"/>
+        <Class IRI="#season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#barrel"/>
+        <Class IRI="#container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#barrier"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#barrier_tape"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#barrier_tape"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bay"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bicyle"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bikeway"/>
+        <Class IRI="#road"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#biome"/>
+        <Class IRI="#environment_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#boom_barrier"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#boom_barrier"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bridge"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#building"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bus"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bush"/>
+        <Class IRI="#vegetation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cacti"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#camera"/>
+        <Class IRI="#passive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#canyon"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#car"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cave"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#celestial_body"/>
+        <Class IRI="#atmospheric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clear"/>
+        <Class IRI="#weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cloud"/>
+        <Class IRI="#atmospheric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#coastal"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#concrete"/>
+        <Class IRI="#artificial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#construction_and_agricultural_vehicle"/>
+        <Class IRI="#tracked_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#construction_and_agricultural_vehicle"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#container"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#curb"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dawn"/>
+        <Class IRI="#time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#day"/>
+        <Class IRI="#time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#debris"/>
+        <Class IRI="#geographic_feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#desert"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#detritus"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dusk"/>
+        <Class IRI="#time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dynamic"/>
+        <Class IRI="#motion_label"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_pole"/>
+        <Class IRI="#pole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#elevation_change"/>
+        <Class IRI="#instance_attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#environment_labels"/>
+        <Class IRI="#scenario_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#exteroperceptive"/>
+        <Class IRI="#sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fence"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fire_hydrant"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flat"/>
+        <Class IRI="#elevation_change"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fluctuating_elevation"/>
+        <Class IRI="#elevation_change"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fog_haze"/>
+        <Class IRI="#weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#forest"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gas_pump"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#geographic_feature"/>
+        <Class IRI="#instance_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#glacier"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gps"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grass"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grassland"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ground_cover"/>
+        <Class IRI="#vegetation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ground_vehicle"/>
+        <Class IRI="#vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#guard_rail"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gyroscope"/>
+        <Class IRI="#imu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gyroscope"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_grass"/>
+        <Class IRI="#grass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hill"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hyperspectral"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ice"/>
+        <Class IRI="#H2O"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#imu"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#infrastructure"/>
+        <Class IRI="#geographic_feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#kick_scooter"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lake"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#land_body"/>
+        <Class IRI="#landform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#landform"/>
+        <Class IRI="#geographic_feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#leaf"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#leaf"/>
+        <Class IRI="#tree_log"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#legged"/>
+        <Class IRI="#ground_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lidar"/>
+        <Class IRI="#active"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#low_grass"/>
+        <Class IRI="#grass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#magnetometer"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#material"/>
+        <Class IRI="#instance_attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#military_vehicle"/>
+        <Class IRI="#tracked_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#military_vehicle"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#misc_sign"/>
+        <Class IRI="#sign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#moss"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#motion_label"/>
+        <Class IRI="#scenario_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#motorcycle"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mountain"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multispectral"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#night"/>
+        <Class IRI="#time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#null"/>
+        <Class IRI="#unclassified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#obstacle"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ocean"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#optical_phenomenon"/>
+        <Class IRI="#atmospheric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#overpass"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#panchromatic"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#parking"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#passive"/>
+        <Class IRI="#exteroperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#path"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pedestrian_crossing"/>
+        <Class IRI="#road"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#person"/>
+        <Class IRI="#agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pipe"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plain"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plant"/>
+        <Class IRI="#material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plateau"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pole"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#private"/>
+        <Class IRI="#area_jurisdiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#proprioperceptive"/>
+        <Class IRI="#sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#public"/>
+        <Class IRI="#area_jurisdiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#puddle"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#radar"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rail_track"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#railed_vehicle"/>
+        <Class IRI="#ground_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rain"/>
+        <Class IRI="#weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#regulatory"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#river"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#road"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#road_block"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#road_block"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#road_marking"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rock"/>
+        <Class IRI="#material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rotating_lidar"/>
+        <Class IRI="#lidar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rtk_gps"/>
+        <Class IRI="#gps"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sand"/>
+        <Class IRI="#material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sea"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#season"/>
+        <Class IRI="#environment_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#semi_truck"/>
+        <Class IRI="#truck"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sensor_issue"/>
+        <Class IRI="#void"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#shape"/>
+        <Class IRI="#instance_attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#shipping_container"/>
+        <Class IRI="#container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sidewalk"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sign"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sky"/>
+        <Class IRI="#atmospheric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#snow"/>
+        <Class IRI="#H2O"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#snow_ice"/>
+        <Class IRI="#weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#soil"/>
+        <Class IRI="#material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#solid_state_lidar"/>
+        <Class IRI="#lidar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#speed_bump"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#spring"/>
+        <Class IRI="#season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#static"/>
+        <Class IRI="#motion_label"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#street_light"/>
+        <Class IRI="#pole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stroller"/>
+        <Class IRI="#wheeled_device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#subterranean"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#summer"/>
+        <Class IRI="#season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#table"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#telecommunication_pole"/>
+        <Class IRI="#pole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#thermal"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#time_of_day"/>
+        <Class IRI="#environment_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tracked_vehicle"/>
+        <Class IRI="#ground_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#traffic_cone"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#traffic_light"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#traffic_sign"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#traffic_sign"/>
+        <Class IRI="#sign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trail"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trailer_unattached"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trash_container"/>
+        <Class IRI="#container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree"/>
+        <Class IRI="#vegetation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree_crown"/>
+        <Class IRI="#tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree_log"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree_root"/>
+        <Class IRI="#tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree_trunk"/>
+        <Class IRI="#tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tricycle"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#truck"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tundra"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tunnel"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ultrasound"/>
+        <Class IRI="#active"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unclassified"/>
+        <Class IRI="#instance_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unknown"/>
+        <Class IRI="#void"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#urban"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#valley"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vegetation"/>
+        <Class IRI="#geographic_feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vehicle"/>
+        <Class IRI="#agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vehicle"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#IsAdversary"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vine"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#void"/>
+        <Class IRI="#unclassified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wall"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#water"/>
+        <Class IRI="#H2O"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#water_body"/>
+        <Class IRI="#landform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#water_vehicle"/>
+        <Class IRI="#vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#weather"/>
+        <Class IRI="#environment_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wetland"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wetland"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wheelchair"/>
+        <Class IRI="#wheeled_device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wheeled_device"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wheeled_vehicle"/>
+        <Class IRI="#ground_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#winter"/>
+        <Class IRI="#season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wire"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wood"/>
+        <Class IRI="#tree_log"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataHasValue>
+            <DataProperty IRI="#LabelPolicyVersion"/>
+            <Literal>2.0.5</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#agent"/>
+        <Class IRI="#atmospheric"/>
+        <Class IRI="#geographic_feature"/>
+        <Class IRI="#unclassified"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasSensor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasMaterial"/>
+        <ObjectProperty IRI="#Makes"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasMaterial"/>
+        <ObjectUnionOf>
+            <Class IRI="#agent"/>
+            <Class IRI="#geographic_feature"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasSensor"/>
+        <Class IRI="#agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Makes"/>
+        <Class IRI="#material"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasMaterial"/>
+        <Class IRI="#material"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasSensor"/>
+        <Class IRI="#sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Makes"/>
+        <ObjectUnionOf>
+            <Class IRI="#agent"/>
+            <Class IRI="#geographic_feature"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AgentManufacturer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AgentWeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AutonomyMode"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#InstanceHeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#InstanceID"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#IsEgoVehicle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#IsVegetationClump"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#License"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Timestamp"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AgentManufacturer"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AgentWeight"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AutonomyMode"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ConfidenceLevel"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DatasetName"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ElevationChange"/>
+        <Class IRI="#geographic_feature"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ImageName"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Class IRI="#collection_platform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Class IRI="#instance_attributes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Class IRI="#instance_labels"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Class IRI="#sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsAdversary"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsBoulder"/>
+        <Class IRI="#rock"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsCobble"/>
+        <Class IRI="#rock"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsEgoVehicle"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsFreshWater"/>
+        <Class IRI="#H2O"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsGravel"/>
+        <Class IRI="#rock"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsRider"/>
+        <Class IRI="#person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsVegetationClump"/>
+        <Class IRI="#vegetation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#LabelPolicyVersion"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SizeArea"/>
+        <Class IRI="#instance_labels"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Traversability"/>
+        <Class IRI="#geographic_feature"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#AgentManufacturer"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AgentWeight"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AutonomyMode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ConfidenceLevel"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DatasetName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ElevationChange"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ImageName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsAdversary"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsBoulder"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsCobble"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsDynamic"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsEgoVehicle"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsFreshWater"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsGravel"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsRider"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsShadow"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsVegetationClump"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LabelPolicyVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#License"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SensorIssue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SizeArea"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Timestamp"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Traversability"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#geographic_feature"/>
+                <Variable abbreviatedIRI=":f"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#ElevationChange"/>
+                <Variable abbreviatedIRI=":f"/>
+                <Variable abbreviatedIRI=":val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable abbreviatedIRI=":val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable abbreviatedIRI=":val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-0.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#barrier"/>
+                <Variable abbreviatedIRI=":f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#geographic_feature"/>
+                <Variable abbreviatedIRI=":f"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#ElevationChange"/>
+                <Variable abbreviatedIRI=":f"/>
+                <Variable abbreviatedIRI=":val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable abbreviatedIRI=":val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable abbreviatedIRI=":val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-0.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#flat"/>
+                <Variable abbreviatedIRI=":f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AgentManufacturer</IRI>
+        <Literal>Company that has manufactured the instance of the agent class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AgentWeight</IRI>
+        <Literal>The stock weight of the instance of the agent class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AutonomyMode</IRI>
+        <Literal>The autonomy level of the instance of the agent class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConfidenceLevel</IRI>
+        <Literal>The confidence value about the semantic class of a given individual. It is represented in percentage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DatasetName</IRI>
+        <Literal>Name of the dataset which is being imported into the unfied ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ElevationChange</IRI>
+        <Literal>The rate of change of elevation of an instance of a particular geographic feature. It is the slope i.e. how much elevation is gained/lost for each m moved .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HasMaterial</IRI>
+        <Literal>Specifies the material that makes up an individual belonging to either the agent or the geographic feature class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HasSensor</IRI>
+        <Literal>Specifies what all sensors does any given agent have.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ImageName</IRI>
+        <Literal>Name of the image of the particular dataset that is being imported into the unfying ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InstanceHeight</IRI>
+        <Literal>The height of the indivual with respect to the gound.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InstanceID</IRI>
+        <Literal>The identification value for each individual after segmentation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsAdversary</IRI>
+        <Literal>A boolean used to define if an individual defined is an adversary or not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsBoulder</IRI>
+        <Literal>Boolean used to define if an instance of the rock class is large enough to be also classified as a boulder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsCobble</IRI>
+        <Literal>Boolean used to define if an instance of the rock class is small enough to be also classified as cobble.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsDynamic</IRI>
+        <Literal>Boolean used to define if any given individual of the ontology is capable of motion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsEgoVehicle</IRI>
+        <Literal>Boolen used to define if an instance of the agent class is ego vehicle which was used to capture the dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsFreshWater</IRI>
+        <Literal>Boolean used to define if an instance of the H20 class, is made up of fresh water or salt water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsGravel</IRI>
+        <Literal>Boolean used to define if an instance of the rock class is small enough to be also classified as gravel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsRider</IRI>
+        <Literal>Boolean used to specify if an instance of the person class is also a rider of a vehicle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsShadow</IRI>
+        <Literal>Boolean to specify if an individual specified is in shadow.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsVegetationClump</IRI>
+        <Literal>Boolean used to specify if an instance of the vegetation class is a group of multiple individuals too difficult of being identified individually.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LabelPolicyVersion</IRI>
+        <Literal>Version of ATLAS that is being used for unification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#License</IRI>
+        <Literal>Used to mention the type of license used to keep the unifying ontology open source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Makes</IRI>
+        <Literal>Specifies the list of all individuals are are made up of a particular material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RGB</IRI>
+        <Literal>A camera that captures image data in the red, green, and blue electromagnetic spectrum range in a 3 channel image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RV_and_travel_trailer</IRI>
+        <Literal>Recreational vehicles equipped with living amenities and designed for traveling or camping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SensorIssue</IRI>
+        <Literal>Example of what sort of sensor issue is present, eg. lense flare.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SizeArea</IRI>
+        <Literal>The area of an instance of the instance_labels class specified in m^2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Timestamp</IRI>
+        <Literal>The timestamp specifying when the image being converted into the unifying ontology was captured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Traversability</IRI>
+        <Literal>The ease with which an instance of a geographic_feature class can be travered by a given agent. Specified between a range of 0-100 (0 - Most Traversable and 100 - Least Traversable)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#accelerometer</IRI>
+        <Literal>A sensor that measures vibration or acceleration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#active</IRI>
+        <Literal>A sensor that emits form of energy to gather information related to the environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aerial_vehicle</IRI>
+        <Literal>A vehicle whose primary operational domain is the air</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#agent</IRI>
+        <Literal>An entity that is capable of performing actions in an environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#agricultural</IRI>
+        <Literal>specific ground cover releating to farming or agricultural needs, such as extensive farmland.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#animal</IRI>
+        <Literal>A non-human organism capable of performing actions in an environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#area_jurisdiction</IRI>
+        <Literal>A geographic feature which is owned by a government, individual, or legal entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#atmospheric</IRI>
+        <Literal>An entity in the enviornment which can be observed in the atmopshere of the planet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#autumn</IRI>
+        <Literal>The season after summer and before winter, when temperatures gradually decrease.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#barrier</IRI>
+        <Literal>obstacle with the intent of physically preventing movement of access</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#barrier_tape</IRI>
+        <Literal>tape used to resctrict access to areas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bicyle</IRI>
+        <Literal>A three-wheeled vehicle powered by pedaling.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bicyle</IRI>
+        <Literal>A two-wheeled vehicle powered by pedaling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bikeway</IRI>
+        <Literal>A route specifically designed or marked for cycling.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#biome</IRI>
+        <Literal>A large community of plants and animals that occupies a distinct region defined by its climate and dominant vegetation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#boom_barrier</IRI>
+        <Literal>A bar or pole pivoted to allow a boom to block access through a controlled point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bridge</IRI>
+        <Literal>Structure carrying a road, path, or similar infrastructure across something such as a river.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#building</IRI>
+        <Literal>Structure with walls and a roof</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bus</IRI>
+        <Literal>A large motor vehicle designed to carry passengers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bush</IRI>
+        <Literal>A small to medium side plant which covers the ground</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#camera</IRI>
+        <Literal>A passive sensor that captures image data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#canyon</IRI>
+        <Literal>Deep gorge in the ground, typically with a river flowing through it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#car</IRI>
+        <Literal>A four-wheeled vehicle designed to transport people</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cave</IRI>
+        <Literal>Large underground naturally formed chamber.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#celestial_body</IRI>
+        <Literal>Stars, planets, nebulas and other astronimcial bodies that can be observed through the atmosphere of the planet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#clear</IRI>
+        <Literal>A state of the weather where there are no clouds, fog, haze, or other obstructions in the sky.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cloud</IRI>
+        <Literal>A mass of condensed water vapor floating in the atmosphere</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#coastal</IRI>
+        <Literal>Pertaining to areas where the land meets the ocean or sea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#collection_platform</IRI>
+        <Literal>A platform that collects data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#construction_and_agricultural_vehicle</IRI>
+        <Literal>A vehicle used for construction or agricultural purposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#container</IRI>
+        <Literal>Structure for holding other objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#curb</IRI>
+        <Literal>a  stone or concrete edge to a pavement, road, or raised path</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dawn</IRI>
+        <Literal>The time of day when light first appears in the sky, before the sun rises.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#day</IRI>
+        <Literal>The period of time when the sun is above the horizon and it’s light outside.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#debris</IRI>
+        <Literal>Piles or pieces of waste. Natural or manufactured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#desert</IRI>
+        <Literal>A barren area of landscape where little precipitation occurs, resulting in hostile conditions for most plant and animal life</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dusk</IRI>
+        <Literal>The time of day immediately following sunset when the sky is still partially lit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dynamic</IRI>
+        <Literal>Agents are moving within the environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#electric_pole</IRI>
+        <Literal>A pole that supports overhead power or other various utility lines (electric, cable, optical, etc)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#environment_labels</IRI>
+        <Literal>Labels that describe the environmental conditions during data collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#exteroperceptive</IRI>
+        <Literal>Sensors that provide feedback on external environmental properties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fence</IRI>
+        <Literal>A structure for enclosing or blocking an area with posts typically connected by boards, wires, or netting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fog_haze</IRI>
+        <Literal>A weather condition characterized by very fine droplets of water suspended in the air, reducing visibility.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#forest</IRI>
+        <Literal>A large area covered chiefly with trees and undergrowth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#geographic_feature</IRI>
+        <Literal>Sizeable, often stationary, locations, sites, areasm or regions which comprise the layout and structure of a space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#glacier</IRI>
+        <Literal>Slowly moving enormous mass of ice.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#gps</IRI>
+        <Literal>A sensor that determines its precise location and altitude at a given point in time via signals received from satellites.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#grassland</IRI>
+        <Literal>A large open area of country covered with grass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ground_cover</IRI>
+        <Literal>Plants which hug low to the ground and spread over wide areas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ground_vehicle</IRI>
+        <Literal>A vehicle whose primary operational domain is the land</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#guard_rail</IRI>
+        <Literal>A railing designed to keep vehicles or persons from staying off a designated path or into off-limit areas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#gyroscope</IRI>
+        <Literal>A sensor that measures orientation and angular velocity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hill</IRI>
+        <Literal>Naturally elevated area of land with gentle slope.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hyperspectral</IRI>
+        <Literal>A camera that captures image data within specific wavelength ranges across the electromagnetic spectrum with 40 or more spectral bands</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#imu</IRI>
+        <Literal>A sensor that measures specific force, angular rate, and sometimes surrounding magnetic field</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#infrastructure</IRI>
+        <Literal>Man made organization structures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#instance_labels</IRI>
+        <Literal>Labels that define specific objects that occupy space within the image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#kick_scooter</IRI>
+        <Literal>A small platform with two wheels propelled by a rider pushing off the ground</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#landform</IRI>
+        <Literal>A natural feature on the surface of the earth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#legged</IRI>
+        <Literal>A vehicle that moves using legs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lidar</IRI>
+        <Literal>A sensor that emits laser light to measure distances of objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#magnetometer</IRI>
+        <Literal>A sensor that measures magnetism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#military_vehicle</IRI>
+        <Literal>A vehicle designed for combat environments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#motion_label</IRI>
+        <Literal>Describes the predominant motion characteristics for agents within the environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#motorcycle</IRI>
+        <Literal>A two-wheeled motorized vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mountain</IRI>
+        <Literal>Large natural elevation of surface rising abruptly from surrounding area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#multispectral</IRI>
+        <Literal>A camera that captures image data within specific wavelength ranges across the electromagnetic spectrum and has less than 40 bands</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#night</IRI>
+        <Literal>The period of darkness between sunset and sunrise when the sun is below the horizon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#null</IRI>
+        <Literal>Any classification that is thought to be of importance but does not fall into any defined categories.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#obstacle</IRI>
+        <Literal>An object that blocks or hinders progress</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#optical_phenomenon</IRI>
+        <Literal>Lens flares and other phenemonia that result from lighting and other conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#overpass</IRI>
+        <Literal>A bridge that goes above another path.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#panchromatic</IRI>
+        <Literal>A camera that captures image data across the visible light electromagnetic spectrum range within a single grayscale channel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#parking</IRI>
+        <Literal>A structure where cars and similar wheeled vehicles can be stationed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#passive</IRI>
+        <Literal>A sensor that detects energy emitted or reflected from an object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#path</IRI>
+        <Literal>A track laid down for walking, driving, or more broadly traversing on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pedestrian_crossing</IRI>
+        <Literal>Designated point on structures like road where pedestrians can safely cross.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#person</IRI>
+        <Literal>A human that is capable of performing actions in the environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pipe</IRI>
+        <Literal>A tube used to typically convey liquids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#plain</IRI>
+        <Literal>Area of flat land with few trees</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#plateau</IRI>
+        <Literal>Area of flat land at a reletively high elevation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pole</IRI>
+        <Literal>Long peice of wood or metal used as a support structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#private</IRI>
+        <Literal>A geographic feature that is not owned by a government.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#proprioperceptive</IRI>
+        <Literal>Sensors that provide feedback on the internal state of a system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#public</IRI>
+        <Literal>A geographic feature that is owned by the goverment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#radar</IRI>
+        <Literal>A sensor that emits radio waves to determine range, angle, and velocity of objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rail_track</IRI>
+        <Literal>Permanent rails fastened to the ground over which trains run.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#railed_vehicle</IRI>
+        <Literal>A vehicle designed to travel on rails</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rain</IRI>
+        <Literal>A weather condition marked by the falling of water droplets from the sky.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#regulatory</IRI>
+        <Literal>Signage that conveys what can or cannot be done such as: speed limits, no-turn on red, etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#road</IRI>
+        <Literal>A way wide enough for vehicles to travel over.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#road_block</IRI>
+        <Literal>A barricade set up on a road to prevent escape or passage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#road_marking</IRI>
+        <Literal>Lines, arrows, or words on a road that give information or directions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rotating_lidar</IRI>
+        <Literal>A lidar that rotates while sending out laser beams and measuring how long it takes for them to return</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rtk_gps</IRI>
+        <Literal>A gps that has correctional information to provide enchanced accuracy for positioning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#scenario_labels</IRI>
+        <Literal>Labels that define the environment in which the data was collected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#season</IRI>
+        <Literal>A division of the year marked by changes in weather, ecology, and the amount of daylight.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#semi_truck</IRI>
+        <Literal>Heavy trucks and their attached freight trailer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sensor</IRI>
+        <Literal>A device that detects or measures an environmental characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sidewalk</IRI>
+        <Literal>A paved path for pedestrians, typically on the side of the road.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sign</IRI>
+        <Literal>Signage which conveys information about location, direction, or general purpose information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sky</IRI>
+        <Literal>The unobstructed region of the atmopshere between the planet and space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#snow_ice</IRI>
+        <Literal>A weather condition characterized by the falling of frozen, crystalline water particles, known as snow, or the presence of solidified water, known as ice.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#solid_state_lidar</IRI>
+        <Literal>A lidar that uses electronic beam steering instead of mechanical parts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#speed_bump</IRI>
+        <Literal>A segment of road designed to force vehicles to slow down.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#spring</IRI>
+        <Literal>The season after winter and before summer, when vegetation begins to appear and temperatures gradually increase.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#static</IRI>
+        <Literal>There is a lack of agents within the environment or agents are not moving.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#street_light</IRI>
+        <Literal>A pole supporting a light</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#subterranean</IRI>
+        <Literal>Existing, occurring, or done under the earth’s surface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#summer</IRI>
+        <Literal>The warmest season of the year, occurring between spring and autumn.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#telecommunication_pole</IRI>
+        <Literal>A pole that supports wire or equipment for telecommunications services</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#thermal</IRI>
+        <Literal>A camera that captures image data within the mid and long wave infrared electromagnetic spectrum range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#time_of_day</IRI>
+        <Literal>A specific time period during the 24-hour day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tracked_vehicle</IRI>
+        <Literal>A vehicle designed to travel on continuous tracks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#traffic_cone</IRI>
+        <Literal>a cone shaped marker placed to control the flow of traffic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#traffic_light</IRI>
+        <Literal>A electrical signaling device used to control the flow of traffic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#traffic_sign</IRI>
+        <Literal>Signs which give information to control the flow of traffic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#trail</IRI>
+        <Literal>a pathway, often unpaved, made by the passage of agents such as people or animals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#trailer_unattached</IRI>
+        <Literal>Freight trailers that are not attached to a truck</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tree</IRI>
+        <Literal>A tall plant with a wooden trunk, branches, and leaves.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tree_crown</IRI>
+        <Literal>Top part of a tree which includes branches and leaves.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tree_root</IRI>
+        <Literal>Underground wooden roots of a tree which may break through to the surface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tree_trunk</IRI>
+        <Literal>The main wooden stem of the tree between the roots and crown.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#truck</IRI>
+        <Literal>Wheeled vehicle designed for carrying loads</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tundra</IRI>
+        <Literal>A type of biome where the tree growth is hindered by low temperatures and short growing seasons.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tunnel</IRI>
+        <Literal>Underground or underwater passageway</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ultrasound</IRI>
+        <Literal>A sensor that emits sound waves higher than the upper audible limit of human hearing to create measure distances of objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#urban</IRI>
+        <Literal>Relating to, or characteristic of a city or town.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#valley</IRI>
+        <Literal>Low are aof land situated between hills or mountains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#vegetation</IRI>
+        <Literal>Plants in general</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#vehicle</IRI>
+        <Literal>Objects that are capable of transporting people or items</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#void</IRI>
+        <Literal>Anything regions which should not be considered part of the images (corrupted data, misaligned pixels)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wall</IRI>
+        <Literal>A continuous vertical structure for enclosing or dividing areas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#water_vehicle</IRI>
+        <Literal>A vehicle whose primary operational domain is the water</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#weather</IRI>
+        <Literal>The state of the atmosphere at a particular place and time as regards heat, cloudiness, dryness, sunshine, wind, and rain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wetland</IRI>
+        <Literal>Land consiting of marshes or swamps. Saturated with water</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wheeled_vehicle</IRI>
+        <Literal>A vehicle designed to move on wheels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#winter</IRI>
+        <Literal>The coldest season of the year, occurring after autumn and before spring</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

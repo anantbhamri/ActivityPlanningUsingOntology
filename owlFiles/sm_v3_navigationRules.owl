@@ -1,0 +1,1691 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-12="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archChild">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archParent"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archParent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borderedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borderedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borders"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borderedLeftBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borderedLeftBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borderedBy"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#bordersLeft"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borderedRightBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borderedRightBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borderedBy"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#bordersRight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borders -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borders">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#bordersLeft -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#bordersLeft">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borders"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#bordersRight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#bordersRight -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#bordersRight">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#borders"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#canBeReachedFromFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#canBeReachedFromFeature">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#canReachFeature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#canBeReachedFromGroundPatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#canBeReachedFromGroundPatch">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#canReachGroundPatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#canReachFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#canReachFeature">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#amorphousFeatures"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#locatedFeatures"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#amorphousFeatures"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#locatedFeatures"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#canReachGroundPatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#canReachGroundPatch">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#consistsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#consistsOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#amorphousFeatures"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#locatedFeatures"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#consistsOfLines -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#consistsOfLines">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isPartOfLine"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#contourReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#contourReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#navReach"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#contourReachable"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#contourReachable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#contourReachable">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#navReachable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dirReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dirReach">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#navReach"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dirReachable"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#crossing"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#crossing"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dirReachable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dirReachable">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#navReachable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dnNeighbor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dnNeighbor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#upNeighbor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dnStreamOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dnStreamOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#contourReach"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#upStreamOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#eastOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#eastOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dirReach"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#westOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#hasProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#properties"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#properties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#hasTerrain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#hasTerrain">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#amorphousFeatures"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#terrain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isAdjacentTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isAdjacentTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isAssociatedWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isBorderedNghrOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isBorderedNghrOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isNeighborOf"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isOpenNgbhrOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isDownstreamOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isDownstreamOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isUpstreamOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isNeighborOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isNeighborOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isOpaqueFromAbove -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isOpaqueFromAbove">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#opticalVisibility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isOpaqueFromSides -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isOpaqueFromSides">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#opticalVisibility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isOpenNgbhrOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isOpenNgbhrOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isNeighborOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isPartOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isPartOfLine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isPartOfLine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isUpstreamOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isUpstreamOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#navReach -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#navReach">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#navReachable"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#crossing"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#crossing"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#navReachable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#navReachable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#near -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#near">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnector"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnector"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#northOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#northOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dirReach"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#southOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planAvoid -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planAvoid">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#plan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planDestination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planDestination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#plan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planRest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planRest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#plan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planSource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#plan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#southOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#southOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dirReach"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#upNeighbor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#upNeighbor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#upStreamOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#upStreamOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#contourReach"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#westOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#westOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dirReach"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#flowP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#flowP"/>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#hasProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#hasProperty">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#numNeighbors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#numNeighbors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#traversibleByPed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#traversibleByPed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#traversability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#OffRoadTrail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#OffRoadTrail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#amorphousFeatures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#amorphousFeatures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#properties"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#shape"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#locatedFeatures"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#avoidSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#avoidSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planSets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#concreteTerrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#concreteTerrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#terrain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#traversibleByPed"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#crossing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#crossing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archChild"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#deadEnd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#deadEnd"/>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#destSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#destSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planSets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#fence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#fence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#geom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#geom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grassTerrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grassTerrain">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#terrain"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#traversibleByPed"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grassyField -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grassyField">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#amorphousFeatures"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grassTerrain"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#gravelTerrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#gravelTerrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#location"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#properties"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isNeighborOf"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#numNeighbors"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#locatedFeatures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#locatedFeatures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#geom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#mudTerrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#mudTerrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#occupiability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#occupiability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#oddBuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#oddBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#amorphousFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#opticalVisibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#opticalVisibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#traversability"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archChild"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#traversibleByPed"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#traversability"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#bordersLeft"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#bordersRight"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#dnNeighbor"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#upNeighbor"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#amorphousFeatures"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#isAssociatedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pavedRoadway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pavedRoadway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#plan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#plan">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planAvoid"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planDestination"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planSource"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planReachSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planReachSet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planSets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planSets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#groundPatch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#properties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#properties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#amorphousFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#regularBuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#regularBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#locatedFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#restSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#restSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planSets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#rockPile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#rockPile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#locatedFeatures"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#traversibleByPed"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#sandTerrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#sandTerrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#shape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#geom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#signPost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#signPost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#locatedFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#sourceSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#sourceSet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#planSets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#stillWaterBody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#stillWaterBody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#region"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#waterTerrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#terrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#terrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#properties"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#hasProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#properties"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#traversability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#traversability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#properties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#tree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#tree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#locatedFeatures"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#waterTerrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#waterTerrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#terrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#waterWay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#waterWay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathway"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#waterTerrain"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Barn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Barn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#regularBuilding"/>
+        <near rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road_seg2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Bridge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Bridge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#crossing"/>
+        <archChild rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_pc1"/>
+        <archChild rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_pc2"/>
+        <southOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_Bend"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_PO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_PO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#regularBuilding"/>
+        <eastOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River"/>
+        <northOf rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_WaterTower"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+        <consistsOfLines rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_Bend"/>
+        <consistsOfLines rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg1"/>
+        <consistsOfLines rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg2"/>
+        <consistsOfLines rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_Bend -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_Bend">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+        <upNeighbor rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+        <upNeighbor rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+        <upNeighbor rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_Bend"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+        <consistsOfLines rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road_seg1"/>
+        <consistsOfLines rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road_seg2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road_seg1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road_seg1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road_seg2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road_seg2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_WaterTower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_WaterTower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#regularBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_pc1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_pc1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnector"/>
+        <archChild rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg1"/>
+        <archChild rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_pc2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_pc2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnector"/>
+        <archChild rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road_seg1"/>
+        <archChild rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road_seg2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#avoidSet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#destSet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#restSet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#sourceSet"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#concreteTerrain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grassTerrain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#gravelTerrain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#mudTerrain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#sandTerrain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#waterTerrain"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#grounds"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnector"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#plan"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Barn"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Bridge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_PO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_Bend"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_River_seg3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road_seg1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_Road_seg2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_WaterTower"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_pc1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ex1_pc2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#cross1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#p1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ps1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#e1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>crossContourReachability_1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnector"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnector"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archChild"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archChild"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc2"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#crossing"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#cross1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archChild"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#cross1"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc1"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archChild"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#cross1"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc2"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc1"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc2"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#contourReach"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>pathConnectorContourNav_1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathConnector"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a1"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archChild"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#archChild"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pc1"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a2"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#contourReach"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>pathSegement2pathsContourReachability</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#paths"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#pathSegments"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ps1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#consistsOfLines"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#p1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ps1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#contourReach"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#e1"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#ps1"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#contourReach"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#e1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#p1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>nearNavReachability</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#near"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#navReach"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>upStreamReach</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#upNeighbor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#upStreamOf"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a2"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/swami/ontologies/2021/1/untitled-ontology-12#a1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
